@@ -1,0 +1,48 @@
+:root {
+  --bg-pink: #dc307c;
+  --bg-blue: #33b7e2;
+  --btn-pink: #e83283;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-image: linear-gradient(to right, var(--bg-pink), var(--bg-blue));
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1.title {
+  margin: 2rem;
+  text-align: center;
+}
+
+#p-gender {
+  margin-top: 5rem;
+  font-size: 8rem;
+  text-align: center;
+}
+
+#btn-reveal-gender {
+  background-color: var(--btn-pink);
+  display: block;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding: 1.5rem 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--btn-pink);
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #p-gender {
+    font-size: 5rem;
+  }
+}
